@@ -16,7 +16,7 @@ int main(void)
 		for (ones = (tens + 1); ones <= '9'; ones++) /*one's ten+1*/
 	{
 			putchar(tens);
-			putchar(on es);
+			putchar(ones);
 
 			if (tens != '8' || ones != '9') /*print commas*/
 			{
