@@ -22,4 +22,4 @@ int main(void)
 	return (0);
 }
 
-//preprocessing -E
+/* preprocessing -E*/
