@@ -1,12 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -Entry point
- *
- * A dream doesn't become reality through magic; it takes sweat, determination and hard work
- *
- * Return: Always 0 (Success)
- 
+ * main -Entry point 
 int main(void)
 {
 	int n;
