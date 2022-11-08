@@ -1,24 +1,26 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * leet - encode
- * @s: pointer to char params
+ * rot13 - encoder rot13
+ * @s: pointer to string params
+ *
  * Return: *s
  */
-
-char *leet(char *s)
+char *rot13(char *s)
 {
 	int i;
 	int j;
-	char l[] = "ol_ea__t";
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-	for (j = 0; l[j] != '\0'; j++)
+	for (j = 0; j < 52; j++)
 	{
-	if (s[i] == l[j] || s[i] == (l[j] - 32))
+	if (s[i] == data1[j])
 	{
-	s[i] = j + '0';
+	s[i] = datarot[j];
+	break
 	}
 	}
 	}
